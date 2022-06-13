@@ -2,6 +2,7 @@ package Beakjoon;
 
 import java.util.Scanner;
 
+//완전탐색(Exhaustive search)
 public class N과M_1_silver3_220503 {
 	
 	public static int[] arr;

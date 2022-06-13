@@ -3,9 +3,10 @@ package Beakjoon;
 import java.util.Scanner;
 
 //완전탐색(Exhaustive search)
-public class N과M_3_silver3_220507 {
-	public static int[] arr;
+public class N과M_4_silver3_220507 {
+	
 	public static int N, M;
+	public static int[] arr;
 	public static StringBuilder sb = new StringBuilder();
  
 	public static void main(String[] args) {
@@ -14,27 +15,26 @@ public class N과M_3_silver3_220507 {
  
 		N = in.nextInt();
 		M = in.nextInt();
- 
 		arr = new int[M];
-        
-		dfs(0);
-		System.out.print(sb);
+ 
+		dfs(1, 0);
+		System.out.println(sb);
  
 	}
  
-	public static void dfs(int depth) {
+	public static void dfs(int at, int depth) {
+ 
 		if (depth == M) {
-			for (int i = 0; i < M; i++) {
-				sb.append(arr[i] + " ");
+			for (int val : arr) {
+				sb.append(val).append(' ');
 			}
 			sb.append('\n');
 			return;
 		}
  
-		for (int i = 1; i <= N; i++) {
+		for (int i = at; i <= N; i++) {
 			arr[depth] = i;
-			dfs(depth + 1);
+			dfs(i, depth + 1);
 		}
 	}
-
 }
