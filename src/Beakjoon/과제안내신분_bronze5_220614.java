@@ -2,7 +2,7 @@ package Beakjoon;
 
 import java.util.Scanner;
 
-// 구현
+//구현
 public class 과제안내신분_bronze5_220614 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -17,9 +17,6 @@ public class 과제안내신분_bronze5_220614 {
 			if(student[i]!=1)
 				System.out.println(i);
 		}
-		
 		sc.close();
-
 	}
-
 }

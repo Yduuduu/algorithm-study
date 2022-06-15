@@ -3,7 +3,7 @@ package Beakjoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-// ¿ÏÀüÅ½»ö(Exhaustive search)
+//¿ÏÀüÅ½»ö(Exhaustive search)
 public class ÀÏ°ö³­ÀïÀÌ_bronze1_220503 {
 	private static int[] persons = new int[9];
 	private static int sum;
